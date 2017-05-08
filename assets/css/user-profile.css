@@ -1,9 +1,0 @@
-div#profile-page.wrap form#your-profile{
-    position: relative;
-    padding-top: 50px;
-}
-div#profile-page.wrap form#your-profile #profile-nav{
-    position: absolute;
-    top: 0;
-    width: 97%;
-}
