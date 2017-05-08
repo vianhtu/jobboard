@@ -1,0 +1,3 @@
+.wp-submenu a[href="users.php?page=jobboard-profile-edit"]{
+    display: none!important;
+}

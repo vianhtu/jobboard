@@ -1,0 +1,7 @@
+input.large-text, textarea.large-text {
+    width: 100%;
+}
+
+input.regular-text{
+    width: 40%;
+}

@@ -1,0 +1,124 @@
+/** Loading ***********************************/
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.jobboard-loading{
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+/** Msg. ******************************************/
+.jobboard-notices{
+    position: fixed;
+    width: 300px;
+    left: 0;
+    bottom: 0px;
+    margin-left: 10px;
+}
+
+.jobboard-notices .messages{
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+.jobboard-notices .messages-blank{
+    display: none;
+}
+
+.jobboard-notices .messages.active{
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+}
+
+.jobboard-notices .messages .remove{
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.jobboard-notices .messages .remove:hover{
+    background-color: rgba(255, 255, 255, 0.38);
+}
+
+.jobboard-notices .messages-success{
+    background-color: #60a917;
+}
+
+.jobboard-notices .messages-notice{
+    background-color: #fa6800;
+}
+
+.jobboard-notices .messages-error{
+    background-color: #ce352c;
+}
+
+/** Widget **************************************/
+.widget-types .color{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.widget-click , .widget-hover{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000000;
+    min-width: 200px;
+}
+
+.widget-click.active , .widget-hover.active{
+    display: block;
+}
+
+/** fields ***********************************/
+.jobboard-form .text, .jobboard-form .select, .jobboard-form .textarea, .jobboard-form .tags{
+    width: 100%;
+}
+
+.jobboard-form .field-media input{
+    display: none;
+}
+
+.jobboard-form .field-media .file-thumb > i{
+    font-size: 30px;
+}
+
+.jobboard-form .field-media .file-thumb > img{
+    max-width: 150px;
+}
+
+.jobboard-form .field-validated .field-subtitle{
+    color: #df6162;
+}
+
+.jobboard-form .field-validated input, .jobboard-form .field-validated textarea, .jobboard-form .field-validated select, .jobboard-form .field-validated .select2-container--default .select2-selection--single {
+    border-color: #df6162;
+}

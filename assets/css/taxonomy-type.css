@@ -1,0 +1,20 @@
+@media screen and (max-width: 782px) {
+    .wp-list-table tr > td.color.column-color{
+         display: table-cell!important;
+    }
+    .wp-list-table tr > td.color.column-color::before{
+        display: none!important;
+    }
+}
+
+#color{
+    width: 40px;
+}
+
+.column-color span{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: block;
+    border: 2px solid #ffffff;
+}
