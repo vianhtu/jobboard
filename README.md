@@ -1,5 +1,7 @@
 # JobBoard V1.0.3 #
 JobBoard plugin that allows you to create a useful and easy to use Jobs listing for WordPress.
+## Demo Preview ##
+http://preview.themeforest.net/item/recruitment-agency-multi-industry-responsive-wordpress-theme/full_screen_preview/19490434?ref=googlestart&clickthrough_id=1007582839&redirect_back=true
 ## Plugin Features ##
 * Job Types
 * Job Locations
