@@ -18,4 +18,4 @@ JobBoard plugin that allows you to create a useful and easy to use Jobs listing 
 * Candidate Role
 * Job Manager Role
 * RC Framework
-* + Many More Features
+* Many More Features
