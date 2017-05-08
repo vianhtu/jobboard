@@ -1,0 +1,83 @@
+.jobboard-table table .toggle-row{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    display: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: 0;
+    background: 0 0;
+}
+.jobboard-table table .toggle-row .screen-reader-text{
+    display: none;
+}
+
+@media screen and (max-width: 782px) {
+    .jobboard-table table td {
+        position: relative;
+        clear: both;
+        display: block;
+        width: auto;
+    }
+
+    .jobboard-table table th.column-0 {
+        width: 100%;
+    }
+
+    .jobboard-table table th:not(.column-0) {
+        display: none;
+    }
+
+    .jobboard-table table .toggle-row {
+        display: block;
+    }
+
+    .jobboard-table table td.column-0 {
+        padding-right: 50px;
+    }
+
+    .jobboard-table table td:not(.column-0){
+        display: none;
+    }
+
+    .jobboard-table table .is-expanded td:not(.column-0){
+        display: block;
+        overflow: hidden;
+        border: none!important;
+        padding: 3px 8px 3px 35%;
+    }
+
+    .jobboard-table table .is-expanded td:not(.column-0)::before{
+        position: absolute;
+        left: 10px;
+        display: block;
+        overflow: hidden;
+        width: 30%;
+        content: attr(data-colname);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: left;
+    }
+}
+
+.jobboard-table table .is-expanded .toggle-row:before{
+    content: "\f142";
+}
+
+.jobboard-table table .toggle-row:before{
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    padding: 1px 2px 1px 0;
+    color: #444;
+    content: "\f140";
+    font: 400 20px/1 dashicons;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+}
